@@ -1,0 +1,21 @@
+git commands
+
+		NEVER PUSH TO MAIN
+	
+	Switch to different branch
+		- git checkout "branch"
+		
+	Check current branch
+		- git branch
+	
+	Get new updated files from git
+		- git branch main
+		- git status
+		- git pull
+		
+	Update local files to git
+		- git add "file(s)"
+		- git commit -m "message"
+		- git push
+		
+	
