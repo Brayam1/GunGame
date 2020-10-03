@@ -18,4 +18,8 @@ git commands
 		- git commit -m "message"
 		- git push
 		
+		
+Import Project
+	smart import
+		
 	
