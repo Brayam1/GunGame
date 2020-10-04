@@ -6,6 +6,7 @@ public class Player {
 	private int score = 0;
 	public GunStance gun = new GunStance();
 	
+
 	public int getAction(){
 		
 		String[] actions = {"shield", "shoot", "reload"};
@@ -35,4 +36,8 @@ public class Player {
 	public void incrementScore() {
 		score++;
 	}
+}
+=======
+	/* Brayam */
+	
 }
