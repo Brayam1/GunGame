@@ -25,18 +25,18 @@ public class GameEngine {
 	
 		
 		
-		while(CPU.getScore() != winningScore || p1.getScore() != winningScore ) {
-			cpuAction = p2.getAction(p1.GunStance.bullets);
+		while(p2.getScore() != winningScore || p1.getScore() != winningScore ) {
+			cpuAction = p2.getAction(p1.gun.bullet);
 			playerAction = p1.getAction();
 			if ( gameStates[cpuAction][playerAction] == 1){
-				p2.incrementScore;
+				p2.incrementScore();
 				}
 			
 			else if (gameStates[cpuAction][playerAction] == -1) { 
-				p1.incrementScore;
+				p1.incrementScore();
 				}
 		}
-		if p2.getScore()>p1.getScore(){
+		if (p2.getScore()>p1.getScore()){
 			System.out.println("LOSER!!!");
 		}
 		else {
