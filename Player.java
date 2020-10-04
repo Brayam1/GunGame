@@ -35,9 +35,5 @@ public class Player {
 	
 	public void incrementScore() {
 		score++;
-	}
-}
-=======
-	/* Brayam */
-	
+	}	
 }
