@@ -1,7 +1,6 @@
 
 public class GunStance {
 
-	/* edgar */
 	int bullet = 1;
 
 	int setAction(int act){
