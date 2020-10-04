@@ -24,17 +24,20 @@ public class GameEngine {
 	 
 	
 		
-		
-		while(p2.getScore() != winningScore || p1.getScore() != winningScore ) {
-			cpuAction = p2.getAction(p1.gun.bullet);
+				
+		while(p2.getScore() != winningScore && p1.getScore() != winningScore ) {
+			System.out.println("Player bullets = " + p1.gun.getBullet());
+			System.out.println("CPU bullets    = " + p2.gun.getBullet());
 			playerAction = p1.getAction();
+			cpuAction = p2.getAction(p1.gun.getBullet());
 			if ( gameStates[cpuAction][playerAction] == 1){
-				p2.incrementScore();
+				p1.incrementScore();
 				}
 			
 			else if (gameStates[cpuAction][playerAction] == -1) { 
-				p1.incrementScore();
+				p2.incrementScore();
 				}
+			System.out.println("\n");
 		}
 		if (p2.getScore()>p1.getScore()){
 			System.out.println("LOSER!!!");

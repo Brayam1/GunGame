@@ -1,32 +1,37 @@
 
 public class GunStance {
 
-	int bullet = 1;
+	private int bullet = 1;
 
-	int setAction(int act){
+	public int setAction(int act){
 		
 		switch(act) {
 		case 0:
+			System.out.println("chose block");
 			return block();
 		case 1:
+			System.out.println("chose shoot");
 			return shoot();
 		case 2:
+			System.out.println("chose reload");
 			return reload();
 		}
 		return -1;
 		
 	}
 	
-	int shoot() {
+	public int getBullet() {return bullet;}
+	
+	private int shoot() {
 		bullet--;
 		return 1;
 	}
 	
-	int block() {
+	private int block() {
 		return 0;
 	}
 	
-	int reload(){
+	private int reload(){
 		bullet++;
 		return 2;
 	}

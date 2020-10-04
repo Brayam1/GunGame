@@ -15,10 +15,11 @@ public class CPU {
 	
 	
 	public int getAction(int p1_bullets) {
-		if(gun.bullet > 0) {
+		System.out.print("CPU ");
+		if(gun.getBullet() > 0) {
 			return gun.setAction(rand.nextInt(3));
 		}
-		if(gun.bullet == 0) {
+		if(gun.getBullet() == 0) {
 			if(p1_bullets == 0)
 				return gun.setAction(2);
 			return gun.setAction(rand.nextBoolean() ? 0 : 2);
